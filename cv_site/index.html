@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Ayman Elmansy | Computer Engineering Graduate</title>
+  <meta name="description" content="Professional interactive CV website for Mohamed Ayman Elmansy, Computer Engineering Graduate from Kuwait University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar">
+      <a class="download-cv top-download" href="assets/Mohamed_Ayman_Elmansy_CV.pdf" download>
+        <span>Download PDF CV</span>
+        <strong>↓</strong>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">Summary</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Computer Engineering Graduate</p>
+        <h1>Mohamed Ayman<br><span>Elmansy</span></h1>
+        <p class="hero-text">
+          Computer Engineering graduate from Kuwait University with a GPA of 3.96/4.00 and experience in software development,
+          embedded systems, robotics, machine learning, computer networks, and database systems.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+          <a class="btn secondary" href="assets/Mohamed_Ayman_Elmansy_CV.pdf" download>Download CV</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>3.96</strong><span>GPA / 4.00</span></div>
+          <div><strong>KU</strong><span>Kuwait University</span></div>
+          <div><strong>2026</strong><span>B.Eng. Graduate</span></div>
+        </div>
+      </div>
+
+      <div class="profile-card reveal">
+        <div class="photo-frame">
+          <img class="profile-photo" src="assets/profile.jpg" alt="Mohamed Ayman Elmansy profile photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+          <div class="photo-placeholder">Add<br>Photo</div>
+        </div>
+
+        <h2>Computer Engineer</h2>
+        <p>Fahaheel, Kuwait</p>
+
+        <div class="quick-contact">
+          <a href="mailto:mohammadadham20@gmail.com">mohammadadham20@gmail.com</a>
+          <a href="tel:+96567661406">+965 6766 1406</a>
+        </div>
+
+        <div class="profile-tags">
+          <span>Software</span><span>Robotics</span><span>AI</span><span>Embedded</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Professional Summary</p>
+        <h2>Hardware, software, sensors, control systems, and web-based interfaces.</h2>
+      </div>
+
+      <div class="summary-card reveal">
+        <p>
+          Skilled in building practical engineering solutions that combine hardware, software, sensors, control systems,
+          and web-based interfaces. Experienced with Python, Java, C++, C, SQL, JavaScript, Flask, Arduino,
+          Raspberry Pi, ESP32, GitHub, Linux, and machine learning workflows. Award-winning competitive programmer
+          and robotics participant with strong problem-solving, teamwork, documentation, and technical communication skills.
+        </p>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Education</p>
+        <h2>Academic background</h2>
+      </div>
+
+      <div class="education-card reveal">
+        <div>
+          <h3>Bachelor of Engineering in Computer Engineering</h3>
+          <p>Kuwait University · Shadadiya, Kuwait</p>
+        </div>
+        <div class="education-meta">
+          <strong>Sep 2022 – Jun 2026</strong>
+          <span>GPA: 3.96/4.00</span>
+        </div>
+      </div>
+
+      <div class="coursework reveal">
+        <h3>Relevant Coursework</h3>
+        <div class="coursework-grid">
+          <span>Data Structures</span>
+          <span>Operating Systems</span>
+          <span>Network Programming</span>
+          <span>Computer Architecture</span>
+          <span>Signals and Systems</span>
+          <span>Probability and Statistics</span>
+          <span>Database Systems</span>
+          <span>Embedded Systems</span>
+          <span>Hardware Design</span>
+          <span>Machine Learning</span>
+          <span>Numerical Analysis</span>
+          <span>Wireless and Mobile Communication</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Technical Skills</p>
+        <h2>Engineering toolkit</h2>
+      </div>
+
+      <div class="skill-tabs reveal">
+        <button class="tab active" data-tab="programming">Programming</button>
+        <button class="tab" data-tab="software">Software</button>
+        <button class="tab" data-tab="embedded">Embedded & Robotics</button>
+        <button class="tab" data-tab="ai">AI & ML</button>
+        <button class="tab" data-tab="tools">Databases & Tools</button>
+        <button class="tab" data-tab="areas">Engineering Areas</button>
+      </div>
+
+      <div class="skills-panel reveal" id="skillsPanel"></div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Professional Experience</p>
+        <h2>Teaching, technical content, design, and front-end contribution.</h2>
+      </div>
+
+      <div class="experience-grid">
+        <article class="experience-card reveal">
+          <div class="card-head">
+            <div>
+              <h3>Engineering Graphics Instructor and Technical Tutor</h3>
+              <p>Instructor and Technical Content Developer · Kuwait</p>
+            </div>
+            <span>2023 – Present</span>
+          </div>
+          <ul>
+            <li>Delivered academic support in engineering graphics and scientific subjects including mathematics, physics, and chemistry.</li>
+            <li>Created structured explanations, visual learning materials, and technical content to simplify complex concepts.</li>
+            <li>Strengthened communication, teaching, documentation, and presentation skills through direct interaction with students.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card reveal">
+          <div class="card-head">
+            <div>
+              <h3>Graphic Designer and Front-End Contributor</h3>
+              <p>Freelance / Project-Based Work · Kuwait</p>
+            </div>
+            <span>2021 – Present</span>
+          </div>
+          <ul>
+            <li>Designed visual content, interface layouts, and presentation materials for organizations, companies, and online channels.</li>
+            <li>Applied HTML, CSS, JavaScript, and responsive design principles to improve project interfaces and prototypes.</li>
+            <li>Used design experience to improve reports, demonstrations, user interfaces, and presentation quality.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected Projects</p>
+        <h2>Project work from the CV</h2>
+      </div>
+
+      <div class="filter-buttons reveal">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="robotics">Robotics</button>
+        <button class="filter" data-filter="software">Software</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="ai">AI</button>
+        <button class="filter" data-filter="gpu">GPU</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="section certifications" id="certifications">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Certifications</p>
+        <h2>Professional learning</h2>
+      </div>
+
+      <div class="cert-grid reveal">
+        <a class="cert-card" href="https://www.credly.com/badges/b5041375-f8a5-4c40-9963-801c50849555" target="_blank" rel="noreferrer">
+          <h3>Introduction to IoT and Digital Transformation</h3>
+          <p>Cisco Networking Academy</p>
+          <span>View Credential →</span>
+        </a>
+        <a class="cert-card" href="https://www.credly.com/badges/f31b03eb-e6d4-4bb1-b636-af145f18b319" target="_blank" rel="noreferrer">
+          <h3>Introduction to Cybersecurity</h3>
+          <p>Cisco Networking Academy</p>
+          <span>View Credential →</span>
+        </a>
+        <a class="cert-card" href="https://www.credly.com/badges/4e2a3f66-a6fa-4da5-ba14-585c56ed888c" target="_blank" rel="noreferrer">
+          <h3>CCNA: Routing and Switching</h3>
+          <p>Cisco Networking Academy</p>
+          <span>View Credential →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section awards" id="awards">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Honors and Awards</p>
+        <h2>Competitive programming and robotics achievements.</h2>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <span>Feb 2026</span>
+          <div>
+            <h3>VEX Robotics Excellence Award</h3>
+            <p>Received for strong achievement in robot design, programming, teamwork, documentation, and engineering problem-solving.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span>Oct 2024</span>
+          <div>
+            <h3>2nd Place Team – Kuwait Collegiate Programming Contest</h3>
+            <p>Solved algorithmic problems under time constraints using data structures, dynamic programming, graph algorithms, and mathematics.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span>Oct 2023</span>
+          <div>
+            <h3>3rd Place Team – Kuwait Collegiate Programming Contest</h3>
+            <p>Applied competitive programming techniques involving algorithms, mathematical reasoning, optimization, and fast implementation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section extras" id="extras">
+      <div class="extras-grid">
+        <div class="extra-card reveal">
+          <p class="eyebrow">Languages</p>
+          <h2>Arabic: Native<br>English: Advanced</h2>
+        </div>
+        <div class="extra-card reveal">
+          <p class="eyebrow">Areas of Interest</p>
+          <div class="interest-list">
+            <span>Robotics</span>
+            <span>Embedded Systems</span>
+            <span>Software Engineering</span>
+            <span>Artificial Intelligence</span>
+            <span>Machine Learning</span>
+            <span>Computer Vision</span>
+            <span>Computer Networks</span>
+            <span>Autonomous Systems</span>
+            <span>Sensor-Based Platforms</span>
+            <span>Cybersecurity</span>
+            <span>Competitive Programming</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something impactful.</h2>
+        <p>Open to engineering, AI, embedded systems, robotics, research, and software development opportunities.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:mohammadadham20@gmail.com">Email Me</a>
+          <a class="btn secondary" href="tel:+96567661404">Call</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/mo-elmansy/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn secondary" href="https://github.com/momansy/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn secondary" href="assets/Mohamed_Ayman_Elmansy_CV.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
